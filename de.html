@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="sv" style="transform: rotate(2deg); overflow-x: hidden;">
+<head>
+  <meta charset="UTF-8">
+  <title>KaOs SiDaN 9002: SENAPSKRIGET HYPERLINK-EDITION</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff00ff, #00ff00, #ff0000, #00ffff);
+      font-family: 'Comic Sans MS', cursive;
+      animation: shake 1.5s infinite;
+      min-height: 7000px;
+      overflow-y: scroll;
+      cursor: crosshair;
+    }
+    @keyframes shake {
+      0% { transform: translate(0, 0) rotate(2deg); }
+      25% { transform: translate(15px, -15px) rotate(-3deg); }
+      50% { transform: translate(-15px, 15px) rotate(4deg); }
+      75% { transform: translate(20px, -10px) rotate(-2deg); }
+      100% { transform: translate(0, 0) rotate(2deg); }
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 8em;
+      position: sticky;
+      top: 10px;
+      left: 15%;
+      transform: skew(45deg) scale(1.3);
+      text-shadow: 8px 8px 12px #ff0000, -8px -8px 12px #00ff00;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+    }
+    .mustard {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: url('https://via.placeholder.com/120?text=SENAP') no-repeat center;
+      background-size: contain;
+      animation: fly 3.5s ease-in-out infinite;
+      cursor: pointer;
+      z-index: 50;
+    }
+    @keyframes fly {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(250px, -120px) rotate(100deg); }
+      50% { transform: translate(-180px, 180px) rotate(200deg); }
+      75% { transform: translate(120px, -250px) rotate(300deg); }
+      100% { transform: translate(0, 0) rotate(360deg); }
+    }
+    .insult {
+      position: absolute;
+      color: #ff0000;
+      font-size: 4em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 3px 3px 6px #000000;
+      animation: fade 2s forwards;
+      pointer-events: none;
+      z-index: 200;
+    }
+    @keyframes fade {
+      0% { opacity: 1; transform: scale(1); }
+      100% { opacity: 0; transform: scale(2.5); }
+    }
+    .random-message {
+      position: absolute;
+      color: #00ff00;
+      font-size: 3.5em;
+      font-weight: bold;
+      text-shadow: 4px 4px 8px #ff00ff;
+      animation: bounce 1.5s linear forwards;
+      pointer-events: none;
+      z-index: 150;
+    }
+    @keyframes bounce {
+      0% { transform: translateX(0); opacity: 1; }
+      50% { transform: translateX(500px) rotate(180deg); opacity: 0.7; }
+      100% { transform: translateX(1000px) rotate(360deg); opacity: 0; }
+    }
+    .random-div {
+      position: absolute;
+      border: 10px double #00ffff;
+      padding: 20px;
+      background: rgba(255, 255, 0, 0.6);
+      transform: rotate(-35deg);
+      color: #ff00ff;
+      font-size: 2.8em;
+      z-index: 10;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    .random-link {
+      position: absolute;
+      color: #ffff00;
+      font-size: 2.5em;
+      text-decoration: underline wavy #ff0000;
+      text-shadow: 3px 3px 5px #000000;
+      animation: wiggle 1s infinite;
+      z-index: 30;
+      background: rgba(0, 255, 0, 0.4);
+      padding: 10px;
+      cursor: pointer;
+    }
+    @keyframes wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      50% { transform: rotate(-10deg); }
+      75% { transform: rotate(5deg); }
+      100% { transform: rotate(0deg); }
+    }
+    button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      font-size: 3em;
+      background: radial-gradient(circle, #ff00ff, #00ff00);
+      color: #ffffff;
+      border: 12px ridge #ff0000;
+      transform: rotate(15deg);
+      z-index: 150;
+      padding: 15px;
+      box-shadow: 5px 5px 15px #000000;
+    }
+    p {
+      font-size: 3em;
+      color: #ffffff;
+      text-shadow: 5px 5px 8px #000000;
+      animation: pulse 2.5s infinite;
+      position: absolute;
+      cursor: pointer;
+      background: rgba(0, 0, 255, 0.4);
+      padding: 10px;
+      z-index: 20;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.4); }
+      100% { transform: scale(1); }
+    }
+    marquee {
+      font-size: 5em;
+      color: #ffff00;
+      position: absolute;
+      width: 100%;
+      z-index: 30;
+      text-shadow: 3px 3px 6px #000000;
+    }
+    a {
+      color: #00ff00;
+      text-decoration: underline dotted #ff00ff;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #ff0000;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>SENAPSKRIGET: HYPERLÄNKKAOS!!!</h1>
+  <div class="random-div" style="top: 200px; left: 150px;">VAD ÄR DET HÄR FÖR <a href="https://www.rickroll.io" target="_blank">SOPPA</a>?!</div>
+  <div class="random-div" style="top: 700px; left: 450px;">SPAGHETTI I <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">HATTEN</a>!</div>
+  <div class="random-div" style="top: 1300px; left: 100px;">KOSSORNA <a href="https://www.cowsgomoo.com" target="_blank">FLYGER</a>!!! 🐄</div>
+  <div class="random-div" style="top: 1900px; left: 650px;">VEM STAL MINA <a href="https://www.youtube.com/watch?v=2Z4m4lnjxkY" target="_blank">SKOR</a>?!</div>
+  <div class="random-div" style="top: 2600px; left: 250px;">SENAP PÅ <a href="https://www.bananaempire.com" target="_blank">PANNAN</a>!!! 🌭</div>
+  <div class="random-div" style="top: 3200px; left: 400px;">JAG ÄR EN <a href="https://www.youtube.com/watch?v=6Ejga4kJUts" target="_blank">TOASTARE</a>! 🍞</div>
+  <p style="top: 400px; left: 350px;">HUR KAN DETTA <a href="https://www.squidgamefanpage.com" target="_blank">HÄNDA</a>?! 🦑</p>
+  <p style="top: 900px; left: 550px;">FLYGANDE <a href="https://www.youtube.com/watch?v=zvq9r6R6QAY" target="_blank">PANNKAKOR</a>!!! 🥞</p>
+  <p style="top: 1500px; left: 150px;">VAD ÄR <a href="https://www.timecube.com" target="_blank">TID</a> ENS?! ⏰</p>
+  <p style="top: 2100px; left: 750px;">JAG ÄR EN <a href="https://www.youtube.com/watch?v=5_sfnQDr1-o" target="_blank">MUTANTANANAS</a>! 🍍</p>
+  <p style="top: 2800px; left: 350px;">SLUTA <a href="https://www.staringcat.com" target="_blank">KOLLA</a> PÅ MIG!!! 😳</p>
+  <p style="top: 3500px; left: 500px;">MIN KATT ÄR EN <a href="https://www.youtube.com/watch?v=9-5smn3z0MQ" target="_blank">ROBOT</a>! 🤖</p>
+  <div class="random-link" style="top: 500px; left: 200px;"><a href="https://www.weirdorconfusing.com" target="_blank">KOLLA DENNA GALENSKAP!</a></div>
+  <div class="random-link" style="top: 1200px; left: 600px;"><a href="https://www.youtube.com/watch?v=8fvTxv46ano" target="_blank">DANSANDE KORV!</a></div>
+  <div class="random-link" style="top: 2000px; left: 300px;"><a href="https://www.potatopower.org" target="_blank">KRAFTEN AV POTATIS!</a></div>
+  <div class="random-link" style="top: 3000px; left: 500px;"><a href="https://www.youtube.com/watch?v=RxAbR7E1B3c" target="_blank">SÅNG OM EN GURKA!</a></div>
+  <marquee style="top: 800px;">VAD ÄR DET HÄR FÖR <a href="https://www.theuselessweb.com" target="_blank">PLATS</a>?!?!</marquee>
+  <marquee style="top: 1800px; direction: right;">LÖP FÖR <a href="https://www.youtube.com/watch?v=1wnE4vF9CQ4" target="_blank">DITT LIV</a>!!! 🏃</marquee>
+  <marquee style="top: 2800px;">SENAP <a href="https://www.mustardmuseum.com" target="_blank">ÖVERALLT</a>!!! 🌭🌭🌭</marquee>
+  <marquee style="top: 3800px;">JAG ÅT EN <a href="https://www.deskcollector.com" target="_blank">SKRIVBORD</a>!!! 📖</marquee>
+  <button onclick="addMustard()">SLÄPP LOSS MER SENAP!!!</button>
+  <script>
+    function addMustard() {
+      const mustard = document.createElement('div');
+      mustard.className = 'mustard';
+      mustard.style.top = Math.random() * (window.innerHeight - 120) + 'px';
+      mustard.style.left = Math.random() * (window.innerWidth - 120) + 'px';
+      mustard.addEventListener('click', () => mustard.remove());
+      document.body.appendChild(mustard);
+
+      setTimeout(() => {
+        if (mustard.parentNode) {
+          const insult = document.createElement('div');
+          insult.className = 'insult';
+          insult.innerText = 'FUCK YOU BALLESNIFFARE!';
+          insult.style.top = mustard.style.top;
+          insult.style.left = mustard.style.left;
+          document.body.appendChild(insult);
+          setTimeout(() => insult.remove(), 2000);
+          mustard.remove();
+        }
+      }, 4000);
+    }
+
+    const randomMessages = [
+      'DIN SKO ÄR EN BANAN!',
+      'JAG SÅG EN FLYGANDE TOALETT!',
+      'MIN KATT ÄR PRESIDENT!',
+      'VEM LADE OST PÅ MÅNEN?!',
+      'JAG ÄR EN DANSSKIVA! 💃',
+      'SLUTA ANDAS MIN LUFT!',
+      'SENAP ÄR MIN SJÄL!',
+      'VAD ÄR EN GURKA ENS?! 🥒',
+      'JAG GIFTE MIG MED EN LAMPA!',
+      'DIN NÄSA ÄR EN RAKET! 🚀'
+    ];
+
+    function addRandomMessage(x, y) {
+      const message = document.createElement('div');
+      message.className = 'random-message';
+      message.innerText = randomMessages[Math.floor(Math.random() * randomMessages.length)];
+      message.style.top = y + 'px';
+      message.style.left = x + 'px';
+      document.body.appendChild(message);
+      setTimeout(() => message.remove(), 1500);
+    }
+
+    document.querySelectorAll('p').forEach(p => {
+      p.addEventListener('click', (e) => {
+        addRandomMessage(e.clientX, e.clientY);
+      });
+    });
+
+    for (let i = 0; i < 6; i++) {
+      addMustard();
+    }
+
+    setInterval(() => {
+      document.body.style.background = `linear-gradient(${Math.random() * 360}deg, ${randomColor()}, ${randomColor()}, ${randomColor()})`;
+      document.querySelectorAll('.random-div').forEach(div => {
+        div.style.transform = `rotate(${Math.random() * 360}deg)`;
+        div.style.color = randomColor();
+      });
+      document.querySelectorAll('p').forEach(p => {
+        p.style.background = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`;
+      });
+      document.querySelectorAll('.random-link').forEach(link => {
+        link.style.top = `${Math.random() * (window.innerHeight - 100) + window.scrollY}px`;
+      });
+    }, 1500);
+
+    function randomColor() {
+      return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+    document.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY;
+      document.querySelectorAll('p').forEach(p => {
+        p.style.left = `${Math.sin(scrollPos / 100) * 300 + 400}px`;
+        p.style.transform = `scale(1.4) rotate(${Math.random() * 20 - 10}deg)`;
+      });
+      document.querySelectorAll('.random-link').forEach(link => {
+        link.style.left = `${Math.cos(scrollPos / 200) * 200 + 300}px`;
+      });
+      if (scrollPos > 6000) {
+        alert('DU ÄR FÖR DJUPT NER! KÖP EN <a href="https://www.submarineadventures.com">UBÅT</a>!');
+      }
+    });
+  </script>
+</body>
+</html>
